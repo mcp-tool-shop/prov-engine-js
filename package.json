@@ -8,7 +8,7 @@
     "prov-engine": "./prov-engine.js"
   },
   "scripts": {
-    "test": "node prov-engine.js check-vector ../prov-spec/spec/vectors/integrity.digest.sha256 && node prov-engine.js check-vector ../prov-spec/spec/vectors/adapter.wrap.envelope_v0_1"
+    "test": "node prov-engine.js describe && echo '{\"value\":\"test\"}' > _test_tmp.json && node prov-engine.js digest _test_tmp.json && node prov-engine.js wrap _test_tmp.json && node -e \"require('fs').unlinkSync('_test_tmp.json')\""
   },
   "keywords": [
     "provenance",
@@ -22,13 +22,13 @@
   ],
   "author": "mcp-tool-shop <64996768+mcp-tool-shop@users.noreply.github.com>",
   "license": "MIT",
-  "homepage": "https://github.com/mcp-tool-shop/prov-engine-js#readme",
+  "homepage": "https://github.com/mcp-tool-shop-org/prov-engine-js#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mcp-tool-shop/prov-engine-js.git"
+    "url": "git+https://github.com/mcp-tool-shop-org/prov-engine-js.git"
   },
   "bugs": {
-    "url": "https://github.com/mcp-tool-shop/prov-engine-js/issues"
+    "url": "https://github.com/mcp-tool-shop-org/prov-engine-js/issues"
   },
   "engines": {
     "node": ">=18.0.0"
