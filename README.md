@@ -1,5 +1,8 @@
 # prov-engine-js
 
+> Part of [MCP Tool Shop](https://mcptoolshop.com)
+
+
 **A minimal, zero-dependency Node.js provenance engine for prov-spec interop.**
 
 [![prov-spec L1](https://img.shields.io/badge/prov--spec-L1%20Integrity-blue)](https://github.com/prov-spec/prov-spec)
